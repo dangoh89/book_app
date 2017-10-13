@@ -1,0 +1,21 @@
+<h1>Booklist</h1>
+
+<%= form_for @book, url: booklist_index_path do |f| %>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :author %>
+    <%= f.text_field :author %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+
+<% end %>
+
+<%= link_to 'Back', booklist_index_path %>
